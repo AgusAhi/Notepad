@@ -177,7 +177,7 @@ public class MainJFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jCheckBoxMenuItem3ActionPerformed
 
-    
+     
     /**
      * @param args the command line arguments
      */
