@@ -56,7 +56,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jCheckBoxMenuItemExit = new javax.swing.JCheckBoxMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(500, 400));
@@ -64,14 +64,15 @@ public class MainJFrame extends javax.swing.JFrame {
         jToolBar.setRollover(true);
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/160476.png"))); // NOI18N
-        jButton3.setText("New");
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("properties/Bundle_es_ES"); // NOI18N
+        jButton3.setText(bundle.getString("MainJFrame.jButton3.text")); // NOI18N
         jButton3.setFocusable(false);
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar.add(jButton3);
 
         jButtonOpen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3344056.png"))); // NOI18N
-        jButtonOpen.setText("Open");
+        jButtonOpen.setText(bundle.getString("MainJFrame.jButtonOpen.text")); // NOI18N
         jButtonOpen.setFocusable(false);
         jButtonOpen.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButtonOpen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -83,7 +84,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jToolBar.add(jButtonOpen);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/12621403.png"))); // NOI18N
-        jButton2.setText("Save");
+        jButton2.setText(bundle.getString("MainJFrame.jButton2.text")); // NOI18N
         jButton2.setFocusable(false);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -102,14 +103,14 @@ public class MainJFrame extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        jMenu.setText("File");
+        jMenu.setText(bundle.getString("MainJFrame.jMenu.text")); // NOI18N
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/160476.png"))); // NOI18N
-        jMenuItem1.setText("New");
+        jMenuItem1.setText(bundle.getString("MainJFrame.jMenuItem1.text")); // NOI18N
         jMenu.add(jMenuItem1);
 
         jMenuOpen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3344056.png"))); // NOI18N
-        jMenuOpen.setText("Open");
+        jMenuOpen.setText(bundle.getString("MainJFrame.jMenuOpen.text")); // NOI18N
         jMenuOpen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuOpenActionPerformed(evt);
@@ -118,12 +119,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jMenu.add(jMenuOpen);
 
         jCheckBoxMenuItem1.setSelected(true);
-        jCheckBoxMenuItem1.setText("Save");
+        jCheckBoxMenuItem1.setText(bundle.getString("MainJFrame.jCheckBoxMenuItem1.text")); // NOI18N
         jCheckBoxMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/12621403.png"))); // NOI18N
         jMenu.add(jCheckBoxMenuItem1);
 
         jCheckBoxMenuItem3.setSelected(true);
-        jCheckBoxMenuItem3.setText("Save as ...");
+        jCheckBoxMenuItem3.setText(bundle.getString("MainJFrame.jCheckBoxMenuItem3.text")); // NOI18N
         jCheckBoxMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Save As.png"))); // NOI18N
         jCheckBoxMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,7 +135,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jMenu.add(jSeparator1);
 
         jCheckBoxMenuItemExit.setSelected(true);
-        jCheckBoxMenuItemExit.setText("Exit");
+        jCheckBoxMenuItemExit.setText(bundle.getString("MainJFrame.jCheckBoxMenuItemExit.text")); // NOI18N
         jCheckBoxMenuItemExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exit.png"))); // NOI18N
         jCheckBoxMenuItemExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,11 +146,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jMenuBar.add(jMenu);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText(bundle.getString("MainJFrame.jMenu2.text")); // NOI18N
         jMenuBar.add(jMenu2);
 
-        jMenu4.setText("Help");
-        jMenuBar.add(jMenu4);
+        jMenu3.setText(bundle.getString("MainJFrame.jMenu3.text")); // NOI18N
+        jMenuBar.add(jMenu3);
 
         setJMenuBar(jMenuBar);
 
@@ -169,11 +170,11 @@ public class MainJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuOpenActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+         
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCheckBoxMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem3ActionPerformed
-        saveFile(file);
+        
     }//GEN-LAST:event_jCheckBoxMenuItem3ActionPerformed
 
     
@@ -221,6 +222,7 @@ public class MainJFrame extends javax.swing.JFrame {
         }
     }
     
+    /*
     private void saveFile(File file) throws IOException {
         JFileChooser fileChooser = new JFileChooser();
         Component modalToComponent = null;
@@ -228,7 +230,7 @@ public class MainJFrame extends javax.swing.JFrame {
         File file = fileChooser.getSelectedFile();
         }
     }
-    
+    */
     
     
     
@@ -276,7 +278,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItemExit;
     private javax.swing.JMenu jMenu;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuOpen;
